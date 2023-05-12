@@ -1,9 +1,10 @@
 import { React } from 'react';
 import './App.scss';
+import MapWrapper from './components/MapWrapper';
 
-const App = () =>
+const App = (context) =>
 	<div className="App">
-		Ready to start.
+		<MapWrapper { ...context }/>
 	</div>;
 
 export default App;
